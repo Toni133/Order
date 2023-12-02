@@ -1,0 +1,4 @@
+rootProject.name = 'Order'
+include 'src:main:tetst'
+findProject(':src:main:tetst')?.name = 'tetst'
+
