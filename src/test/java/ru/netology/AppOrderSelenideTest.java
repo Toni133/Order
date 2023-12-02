@@ -10,11 +10,12 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class AppOrderSelenideTest {
     @BeforeEach
-    void openBrowser(){
+    void openBrowser() {
         open("http://localhost:9999/");
     }
+
     @Test
-    void shouldTestFormSuccess(){
+    void shouldTestFormSuccess() {
         SelenideElement name = $("[data-test-id=\"name\"]");
         SelenideElement phone = $("[data-test-id=\"phone\"]");
         name.$("[data-test-id=name] input").setValue("Василий Васильков");
