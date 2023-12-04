@@ -16,10 +16,8 @@ public class AppOrderSelenideTest {
 
     @Test
     void shouldTestFormSuccess() {
-        SelenideElement name = $("[data-test-id=\"name\"]");
-        SelenideElement phone = $("[data-test-id=\"phone\"]");
-        name.$("[data-test-id=name] input").setValue("Василий Васильков");
-        phone.$("[data-test-id=phone] input").setValue("+79100000000");
+        SelenideElement name = $("[data-test-id=name] input").setValue("Василий Васильков");
+        SelenideElement phone= $("[data-test-id=phone] input").setValue("+79100000000");
         SelenideElement checkbox = $("[data-test-id=\"agreement\"]");
         SelenideElement button = $("[class=\"button__content\"]");
         checkbox.click();
